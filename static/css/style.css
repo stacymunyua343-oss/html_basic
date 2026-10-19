@@ -18,22 +18,24 @@ body{
     background-color: rgb(250, 250, 250);
     margin: 30px;
     padding: 30px;
-    display: flex;
 }
-.card-container{
+.container{
     gap: 20px;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card{ 
     background-color: rgb(243, 243, 243);
     padding: 20px;
     width: 220px;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(216, 2, 2, 0.952);
-    transition: transform 0.2s;
+    transition: transform 0.2s box-shadow 0.2s;
     text-align: center;
-
+    height: auto;
 }
 .card h2{
     color: rgb(49, 212, 212);
@@ -43,8 +45,8 @@ body{
     line-height: 1.6;
 }
 .card:hover{
-    transform-origin: translateY(-5px);
-    box-shadow:  0 8px 20px #e60e0e(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow:  0 8px 20px rgba(red, green, blue, alpha);
 }
 .navbar{
     max-width: 1100px;
@@ -55,7 +57,7 @@ body{
     flex-wrap: wrap;
     gap: 15px;
 }
-logo{
+.logo{
     color: rgb(71, 218, 169);
     font-size: 30px;
 }
